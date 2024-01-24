@@ -79,21 +79,24 @@ class TestTrainFunction(unittest.TestCase):
         self.writer = SummaryWriter()
 
     def test_train_step(self):
+        error_occurred = False
         try:
             train_part(
                 epochs=self.epochs,
                 model=self.model,
-                train_dl=self.train_dl,
+                train_dl=self.train_dl, 
                 optimizer=self.optimizer,
                 lr_scheduler= self.sche,
                 acc_fn=self.acc_fn,
                 loss_fn=self.loss_fn,
                 writer=self.writer,
                 DEVICE=self.DEVICE
-                )
+            )
         except Exception as e:
             print(f"Exception occurred: {e}")
-            raise
+            error_occurred = True
+
+        self.assertFalse(error_occurred, "An exception occurred during training")
 
 
 if __name__ == '__main__':
