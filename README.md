@@ -14,6 +14,7 @@ The `GTZAN dataset` is the most-used public dataset for evaluation in machine li
 ## Model Architecture
 Deep learning doesn't require us to extract features by ourselves, but to automatically learn high-dimensional abstract data through neural networks. For the problem of speech emotion recognition, I will choose Convolution Neural Network as the deep learning model. Convolutional Neural Network has the ability of representation learning, and there is no additional feature engineering requirement for data. The figure below provides the layer-wise architecture of a basic CNN network. [1]This simple 2D CNN model consists of 3x3 convolution, ReLU non-linearity, and 2x2 max pooling. This module is going to be used for each layer of the 2D CNN.The Conv_2d class represents a generic 2D convolutional layer. [2]
 ![alt text](ProjectImage/cnn.png)
+
 In addition, I use ResNet to get better result. 
 
 ## References
