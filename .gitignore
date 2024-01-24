@@ -1,0 +1,5 @@
+# this is .gitignore file
+
+/saved_models/
+/runs/
+/__pycache__/
