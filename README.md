@@ -29,6 +29,7 @@ To mitigate the gradient vanishing problem frequently encountered in deep CNN mo
 ## Result and Discussion
 After training the CNN model, which have suffered from the common issue of gradient vanishing in deep networks, the accuracy results can reach to 0.62. In contrast, the ResNet architecture's ability to mitigate this problem and reach an accuracy of 0.83 highlights its suitability for deep and complex tasks like music genre classification. The results demonstrate that the ResNet model outperforms the CNN model significantly in terms of accuracy. This substantial performance difference suggests that the ResNet architecture is more effective in capturing complex features and patterns within the mel spectrograms of music tracks, contributing to better genre classification. 
 ![alt text](ProjectImage/output.png)
+
 The superior performance of both deep learning models (CNN and ResNet) compared to traditional machine learning methods underscores the advantage of utilizing deep neural networks in music genre classification. These models can autonomously learn intricate patterns and representations from raw audio data, eliminating the need for manual feature extraction, which is a time-consuming and error-prone process.
 
 ## Conclusion
