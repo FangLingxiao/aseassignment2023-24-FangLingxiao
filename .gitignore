@@ -3,3 +3,5 @@
 /saved_models/
 /runs/
 /__pycache__/
+Data/
+*pytest_cache*
